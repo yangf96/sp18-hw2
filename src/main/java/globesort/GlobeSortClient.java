@@ -54,7 +54,8 @@ public class GlobeSortClient {
 	long end = System.currentTimeMillis();
 	long elapsed = end - start;
         System.out.println("Sorted array");
-        System.out.println("Time elapsed: " + elapsed + "ms");
+        System.out.println("Server sort() Time elapsed: " + response.getTime() + "ms");
+        System.out.println("Application Time elapsed: " + elapsed + "ms");
     }
 
     public void shutdown() throws InterruptedException {
